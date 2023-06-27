@@ -1,0 +1,623 @@
+.Welcome {
+   position: relative;
+   width: 100%;
+   background-image: linear-gradient(#00000085, #000), url('../images/banner/bg.jpg');
+   background-size: cover;
+   background-position: top;
+}
+
+.Welcome .Intro {
+   width: 50%;
+   color: var(--color-1);
+   margin-top: 150px;
+}
+
+/* BEST MENU=============================================================== */
+
+.Best-menu {
+   width: 100%;
+   background: var(--color-2);
+}
+
+.Best-menu .Title {
+   color: var(--color-1);
+}
+
+.Content {
+   width: 100%;
+   display: flex;
+   gap: 10px;
+}
+
+.Best-menu .Content .Caroussel {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   align-items: center;
+   gap: 20px;
+   width: 60%;
+   overflow: hidden;
+}
+
+.Best-menu .Caroussel .Plat {
+   position: relative;
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+   cursor: pointer;
+   box-shadow: 10px -5px 20px var(--shadow);
+}
+
+.Best-menu .Caroussel .Plat img {
+   width: 100%;
+   height: 100%;
+   border-radius: 3px;
+}
+
+.Best-menu .Caroussel .Plat .Details {
+   position: absolute;
+   top: 0;
+   right: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: center;
+   background: #1b1a19;
+   padding: 10px 20px;
+   width: 50%;
+   height: 100%;
+   overflow: hidden;
+   transform: translateX(100%);
+   transition: 1s;
+}
+
+.Best-menu .Caroussel .Plat:hover>.Details {
+   transform: translateX(0);
+   transition: 1s;
+}
+
+.Best-menu .Caroussel .Plat:not(:nth-child(2)) .Details {
+   margin-top: -10px;
+   width: 80%;
+   gap: 5px;
+   height: 105%;
+   align-items: center;
+}
+
+.Details input {
+   border: none;
+   outline: none;
+   padding: 8px;
+   width: 30%;
+   background: var(--color-2);
+   color: var(--color-1);
+   border-radius: 2px;
+}
+
+.Best-menu .Caroussel .Plat:not(:nth-child(2)) .Details input {
+   padding: 6px;
+}
+
+.Details button {
+   margin-top: 20px;
+}
+
+.Details button:hover {
+   border-color: #f18203;
+}
+
+.Best-menu .Caroussel .Plat:not(:nth-child(2)) .Details button {
+   margin-top: 0px;
+   padding: 4px 5px;
+   width: auto;
+}
+
+.Best-menu .Caroussel .Plat:nth-child(1),
+.Best-menu .Caroussel .Plat:nth-child(3) {
+   grid-row: span 2;
+}
+
+.Best-menu .Caroussel .Plat:nth-child(2) {
+   grid-row: span 4;
+   grid-column: span 2;
+}
+
+.Best-menu .Content .Description {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   width: 40%;
+   padding: 2rem;
+}
+
+.Description p {
+   font-family: var(--font3);
+   font-weight: 600;
+   font-size: 1.3rem;
+}
+
+.Description button {
+   width: 50%;
+}
+
+.Best-menu p .Btn4 {
+   margin-top: 30px;
+   margin-right: 30px;
+}
+
+/* BEST-CHOICE========================================================================== */
+.Best-choice {
+   background: var(--color-3);
+}
+
+.Best-choice .Title {
+   color: var(--color-2);
+}
+
+.Best-choice .Content {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.Best-choice .Content .Choice {
+   width: 100%;
+   height: auto;
+   background: var(--color-2);
+   border-radius: 3px;
+}
+
+.Best-choice .Content .Choice img {
+   width: 100%;
+   height: 300px;
+   border-radius: 3px;
+}
+
+.Best-choice .Content .Choice .Details {
+   display: flex;
+   flex-direction: column;
+   padding: 10px 1rem;
+}
+
+.Best-choice .Content .Choice .Details input {
+   background: none;
+   border: 1px solid var(--color-3);
+   color: var(--color-3);
+}
+
+.Best-choice .Content .Choice .Details button:hover {
+   border-color: var(--color-3);
+   transform: translateY(-5px);
+}
+
+.Best-choice .Content .Choice .Details .Star-color {
+   color: var(--color-4);
+}
+
+/* RESERVED============================================================================ */
+.Reseved {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   background-image: linear-gradient(#00000081,#000), url('../images/reservation/3.jpg');
+   background-size: cover;
+   background-position: center;
+}
+
+.Reseved .Title {
+   color: var(--color-1);
+}
+
+.Reseved .Left {
+   width: 50%;
+}
+
+.Reseved small {
+   font-size: 1.4rem;
+   font-weight: 600;
+   font-family: var(--font3);
+   margin-bottom: 30px;
+}
+
+.Reseved .Right {
+   text-align: center;
+   width: 50%;
+   overflow: hidden;
+   margin-top: 40px;
+   padding-left: 40px;
+}
+
+.Reseved .Right h2 {
+   color: var(--color-1);
+   text-decoration: underline;
+}
+
+.Reseved .Right h3 {
+   color: var(--color-1);
+}
+
+.Reseved .Right h2,
+.Reseved .Right h3,
+.Reseved .Right h4 {
+   font-family: var(--font3);
+}
+
+.Reseved .Left h3 {
+   color: var(--color-1);
+   font-family: var(--font);
+   font-size: 1.8rem;
+}
+
+.Reseved .Left {
+   display: flex;
+   flex-direction: column;
+   padding: 20px 0;
+   padding-right: 20px;
+   font-size: 1.8rem;
+   font-family: var(--font4);
+}
+
+.Reseved .Left .Input-box {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.Reseved .Left .Top {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 20px;
+   align-items: center;
+}
+
+.Reseved .Left .Input-box label {
+   color: var(--color-1);
+}
+
+.Reseved .Left .Input-box input,
+.Reseved .Left .Input-box select {
+   border: none;
+   border-bottom: 1px solid var(--color-1);
+   outline: none;
+   border-radius: 3px;
+   padding: 8px;
+   background: none;
+   color: var(--color-1);
+   font-family: var(--font3);
+   font-size: 1.2rem;
+}
+
+.Reseved .Left .Input-box select {
+   box-shadow: none;
+   background-color: transparent;
+   background-image: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+.Reseved .Left .Input-box select option {
+   color: #000;
+   border-radius: 3px;
+   border: none;
+   font-family: var(--font4);
+   font-size: 1.2rem;
+}
+
+.Reseved .Left button {
+   margin-top: 30px;
+   width: 50%;
+}
+
+/* COMMENTS============================================================================================================== */
+.Comments {
+   position: relative;
+   background: var(--color-2);
+}
+
+.Comments .Title {
+   color: var(--color-1);
+}
+
+.Comments .Content .All-comment {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+   gap: 5px;
+   width: 60%;
+}
+
+.All-comment .Comment {
+   width: 100%;
+   height: auto;
+}
+
+.All-comment .Comment img {
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+}
+
+.Leave-comment {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   width: 40%;
+   padding: 10px;
+}
+
+.Leave-comment::after {
+   content: '';
+   position: absolute;
+   height: 400px;
+   width: 400px;
+   border: 2px solid var(--color-1);
+   border-radius: 50%;
+   right: 50px;
+   top: 100px;
+   z-index: 2;
+}
+
+.Leave-comment::before {
+   content: '';
+   position: absolute;
+   height: 80px;
+   width: 80px;
+   border: 2px solid var(--color-1);
+   border-radius: 50%;
+   right: 50px;
+   top: 100px;
+   z-index: 2;
+}
+
+.Leave-comment h2 {
+   color: var(--color-1);
+   font-family: var(--font3);
+}
+
+.Leave-comment .Message {
+   display: flex;
+   width: 100%;
+   border: 2px solid var(--color-1);
+}
+
+.Leave-comment .Message input {
+   width: 100%;
+   border-top-left-radius: 3px;
+   border-bottom-left-radius: 3px;
+   z-index: 100;
+}
+
+.Leave-comment .Message button {
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+   background: var(--color-3);
+   color: var(--color-1);
+   cursor: pointer;
+   z-index: 100;
+}
+
+.Leave-comment .Message input,
+.Leave-comment .Message button {
+   border: none;
+   outline: none;
+   padding: 15px;
+}
+
+.Leave-comment p input {
+   border: none;
+   outline: none;
+   padding: 8px;
+   width: 50px;
+   background: var(--color-3);
+   color: var(--color-1);
+   border-radius: 2px;
+}
+
+.Note {
+   display: flex;
+   gap: 5px;
+   align-items: center;
+}
+
+.Note span {
+   font-family: var(--font3);
+   font-weight: 600;
+}
+
+/* RESPONSIVE=========================================== */
+@media screen and (max-width: 1496px) {
+   .Best-menu .Content .Caroussel {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+   }
+   .Best-menu .Caroussel .Plat:nth-child(1),
+   .Best-menu .Caroussel .Plat:nth-child(3) {
+      grid-row: span 1;
+   }
+   .Best-menu .Caroussel .Plat:nth-child(2) {
+      grid-row: span 2;
+      grid-column: span 1;
+      height: 60%;
+   }
+   .Best-menu .Caroussel .Plat .Details {
+      margin-top: -10px;
+      width: 80%;
+      gap: 0px;
+      height: 115%;
+   }
+   .Best-menu .Caroussel .Plat{
+      height: 100%;
+   }
+}
+@media screen and (max-width: 1361px) {
+   .Best-choice .Content {
+      grid-template-columns: repeat(3,1fr);
+   }
+}
+@media screen and (max-width: 1222px) {
+   .Description button {
+      width: auto;
+   }
+}
+@media screen and (max-width: 1105px) {
+   .Reseved .Left .Top {
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .Comments .Content .All-comment {
+      width: 80%;
+   }
+   .Comments .Content {
+      flex-direction: column;
+   }
+   .Comment {
+      text-align: center;
+   }
+   .Comment h4 {
+      font-size: 14px;
+   }
+   .Comment i {
+      font-size: 10px;
+      
+   }
+   .Leave-comment::before{
+      display: none;
+   }
+   .Leave-comment::after{
+      display: none;
+   }
+}
+@media screen and (max-width: 1000px) {
+   .Best-menu .Content {
+      flex-direction: column;
+   }
+   .Best-menu .Content .Caroussel {
+      width: 100%;
+   }
+   .Best-menu .Content .Description {
+      width: 60%;
+      padding: 0;
+   }
+   .Best-menu .Content .Caroussel {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+   }
+   .Best-menu .Caroussel .Plat {
+      grid-column: span 1;
+      grid-row: span 1;
+      height: 100%;
+   }
+   .Best-menu .Caroussel .Plat {
+      height: 200px !important;
+   }
+   .Best-menu .Caroussel .Plat .Details {
+      width: 100% !important;
+      height: 115%;
+   }
+   .Leave-comment {
+      width: 100%;
+   }
+}
+@media screen and (max-width: 915px) {
+   .Best-choice .Content {
+      grid-template-columns: repeat(2,1fr);
+   }
+}
+@media screen and (max-width: 878px) {
+   .Welcome .Intro {
+      width: 70%;
+   }
+   .Comments .Content .All-comment {
+      width: 100%;
+   }
+}
+@media screen and (max-width: 770px) {
+   .Welcome .Intro {
+      width: 90%;
+   }
+   .Best-menu .Content .Caroussel {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+   }
+   .Best-menu .Content .Description {
+      width: 100%;
+   }
+   .Best-menu .Content .Description button {
+      width: 50%;
+   }
+}
+@media screen and (max-width: 566px) {
+   .Welcome .Intro {
+      width: 100%;
+   }
+   .Reseved {
+      flex-direction: column;
+   }
+   .Reseved .Left, .Reseved .Right {
+      width: 100%;
+   }
+   .Reseved .Right {
+      padding: 0;
+   }
+   .Best-choice .Content {
+      gap: 5px;
+   }
+   .Best-choice .Content .Choice {
+      height: 400px;
+   }
+   .Best-choice .Content .Choice img {
+      height: 200px;
+   }
+   .Best-choice .Content .Choice .Details {
+      padding: 5px;
+   }
+   .Comments .Content .All-comment {
+      width: 100%;
+      grid-template-columns: repeat(2,1fr);
+   }
+   .Comments .Content .All-comment .Comment img {
+      height: 300px;
+   }
+}
+@media screen and (max-width: 496px) {
+   .Title {
+      margin-top: 50px;
+      font-family: var(--font);
+      font-size: 2rem;
+   }
+   .Best-menu .Content .Caroussel {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+   }
+   .Best-menu .Caroussel .Plat img{
+      height: 250px;
+   }
+   .Best-choice .Content {
+      grid-template-columns: repeat(1,1fr);
+      gap: 10px;
+   }
+   .Best-choice .Content .Choice {
+      height: auto;
+   }
+   .Best-choice .Content .Choice img {
+      height: 256.36px;
+   }
+}
+@media screen and (max-width: 472px) {
+   .Comments .Content .All-comment {
+      grid-template-columns: repeat(1,1fr);
+   }
+   .Comments .Content .All-comment .Comment img {
+      height: auto;
+   }
+   .Comment h4 {
+      font-size: 1rem;
+   }
+   .Comment i {
+      font-size: 1rem;
+      
+   }
+}

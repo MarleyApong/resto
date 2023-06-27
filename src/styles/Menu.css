@@ -1,0 +1,180 @@
+.Banner-menu {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   background: var(--color-3);
+   background-size: cover;
+}
+
+.Banner-menu .Intro h1 {
+   color: var(--color-1);
+}
+
+.Banner-menu .Intro,
+.Banner-menu img {
+   width: 50%;
+   color: var(--color-1);
+   margin-top: 80px;
+}
+
+/* MENU-GATEAU + MENU ROTI + FAST FOOD================================================================ */
+.Menu-gateau,
+.Menu-fast {
+   background: var(--color-2);
+}
+
+.Menu-gateau .Title,
+.Menu-fast .Title {
+   color: var(--color-1);
+}
+
+.Menu-gateau .Content,
+.Menu-roti .Content,
+.Menu-fast .Content {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.Choice {
+   width: 100%;
+   height: auto;
+   border-radius: 3px;
+}
+
+.Menu-gateau .Content .Choice,
+.Menu-fast .Content .Choice {
+   background: var(--color-3);
+}
+
+.Menu-roti .Content .Choice {
+   background: var(--color-2);
+}
+
+.Choice img {
+   width: 100%;
+   height: 300px;
+   border-radius: 3px;
+}
+
+.Choice .Details {
+   display: flex;
+   flex-direction: column;
+   padding: 10px 1rem;
+}
+
+.Choice .Details input {
+   background: none;
+}
+
+.Menu-gateau .Content .Choice .Details input,
+.Menu-fast .Content .Choice .Details input {
+   border: 1px solid var(--color-2);
+   color: var(--color-2);
+}
+
+.Menu-roti .Content .Choice .Details input {
+   border: 1px solid var(--color-3);
+   color: var(--color-3);
+}
+
+.Menu-gateau .Content .Choice .Details button,
+.Menu-fast .Content .Choice .Details button {
+   color: var(--color-2);
+   border-color: var(--color-2);
+}
+
+.Menu-gateau .Content .Choice .Details button:hover,
+.Menu-fast .Content .Choice .Details button:hover {
+   transform: translateY(-5px);
+}
+
+.Menu-gateau .Content .Choice .Details .Star-color,
+.Menu-fast .Content .Choice .Details .Star-color {
+   color: var(--color-2);
+}
+
+/* GATEAU ROTI======================================================== */
+.Menu-roti {
+   background: var(--color-3);
+}
+
+.Menu-roti .Title {
+   color: var(--color-2);
+}
+
+/* RESPONSIVE============================================================ */
+@media screen and (max-width: 1361px) {
+   .Menu-gateau .Content, .Menu-roti .Content, .Menu-fast {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media screen and (max-width: 915px) {
+   .Menu-gateau .Content, .Menu-roti .Content, .Menu-fast .Content {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (max-width: 725px) {
+   .Banner-menu {
+      flex-direction: column;
+      gap: 0px;
+      background-image: url('../images/banner/bg2.png');
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: 15rem 15rem;
+   }
+   .Banner-menu .Intro {
+      width: 100%;
+   }
+   .Banner-menu img {
+     margin: 0;
+     display: none;
+   }
+}
+
+@media screen and (max-width: 566px) {
+   .Banner-menu {
+      background-position: 10rem 25rem;
+   }
+   .Menu-gateau .Content, .Menu-roti .Content, .Menu-fast .Content {
+      gap: 5px;
+   }
+
+   .Menu-gateau .Content .Choice, .Menu-roti .Content .Choice, .Menu-fast .Content .Choice {
+      height: 400px;
+   }
+
+   .Menu-gateau .Content .Choice img, .Menu-roti .Content img, .Menu-fast .Content .Choice img {
+      height: 200px;
+   }
+
+   .Menu-gateau .Content .Choice .Details, .Menu-roti .Content .Details, .Menu-fast .Content .Choice .Details {
+      padding: 5px;
+   }
+}
+
+@media screen and (max-width: 497px) {
+   .Title, .Title small {
+      margin-top: 50px;
+      font-family: var(--font);
+      font-size: 1.8rem;
+   }
+
+   .Menu-gateau .Content, .Menu-roti .Content, .Menu-fast .Content {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+   }
+
+   .Menu-gateau .Content .Choice, .Menu-roti .Content .Choice, .Menu-fast .Content .Choice {
+      height: auto;
+   }
+
+   .Menu-gateau .Content .Choice img, .Menu-roti .Content img, .Menu-fast .Content .Choice img {
+      height: 256.36px;
+   }
+}

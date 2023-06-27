@@ -1,0 +1,155 @@
+.Inscription {
+   background: var(--color-2);
+}
+
+.Inscription .Form {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: calc(100vh);
+}
+
+.Inscription form {
+   position: relative;
+   display: flex;
+   width: 70%;
+   height: 60%;
+   margin-top: 40px;
+   align-items: center;
+   box-shadow: inset 1px 1px 2px var(--shadow), 3px 3px 10px var(--shadow);
+   border-radius: 3px;
+   padding: 20px;
+} 
+
+.Inscription form .Left, .Inscription form .Right {
+   width: 50%;
+}
+
+.Inscription form .Left {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   border-right: 1px solid var(--shadow);
+}
+
+.Inscription form .Left i {
+   font-size: 5rem;
+}
+
+.Inscription form .Right {
+   padding: 20px 0;
+   padding-left: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.R-title {
+   display: flex;
+   justify-content: space-between;
+}
+
+.R-title button {
+   background: none;
+   outline: none;
+   border: 1px solid var(--shadow);
+   padding: 3px;
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+.Inscription form .Right input {
+   padding: 10px;
+   outline: none;
+   border: none;
+   border-radius: 4px;
+   background: #0000002c;
+   color: var(--color-3);
+   font-weight: 600;
+   font-family: var(--font2);
+}
+
+.Inscription form .Right input[type="submit"] {
+   border: 1px solid var(--shadow);
+   cursor: pointer;
+}
+
+.Inscription form .Right input::placeholder {
+   color: var(--color-3);
+}
+
+.Cnnx {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100%;
+   gap: 10px;
+   overflow: hidden;
+}
+
+.Cnnx::after, .Cnnx::before {
+   content: '';
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   border: 1px solid var(--shadow);
+   border-radius: 50%;
+}
+
+.Cnnx::after {
+   top: 0;
+   right: 0;
+}
+.Cnnx::before {
+   bottom: 0;
+   left: 0;
+}
+
+/* RESPONSIVE=================================================== */
+@media screen and (max-width: 1500px) {
+   .Inscription form {
+      width: 70%;
+      height: 65%;
+   } 
+}
+@media screen and (max-width: 1145px) {
+   .Inscription form {
+      width: 90%;
+      height: 65%;
+   } 
+}
+@media screen and (max-width: 900px) {
+   .Inscription form {
+      width: 100%;
+      height: 70%;
+   } 
+}
+@media screen and (max-width: 810px) {
+   .Inscription form .Right {
+      width: 100%;
+      padding: 0;
+   }
+   .Inscription form .Left {
+      display: none;
+   }
+}
+@media screen and (max-width: 429px) {
+   .R-title button {
+      font-size: 12px;
+   }
+   .R-title h2 {
+      font-size: 1rem;
+   }
+}
+@media screen and (max-width: 319px) {
+   .Form {
+      padding: 0 5px;
+   }
+   .Inscription form {
+      padding: 10px 5px;
+      /* box-shadow: none; */
+      height: auto;
+   }
+}
